@@ -26,7 +26,7 @@ void Ultrasonic_Init(void) {
 
 static void Ultrasonic_TriggerPulse(void) {
 	PORTB |= (1 << TRIGGER_PIN);
-	_delay_us(10);
+	_delay_us(100);
 	PORTB &= ~(1 << TRIGGER_PIN);
 }
 
